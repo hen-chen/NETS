@@ -1,0 +1,32 @@
+Theory Writeup
+
+1.
+a. Node 1 has in-degree 2 and out-degree 1
+Node 2 has in-degree 3 and out-degree 2
+Node 3 has in-degree 1 and out-degree 2
+Node 4 has in-degree 1 and out-degree 2
+Node 5 has in-degree 2 and out-degree 1
+Node 6 has in-degree 1 and out-degree 2
+
+b. 3 -> 6 -> 2 -> 4 -> 1 -> 5
+c. 3 -> 6 -> 2 -> 4 -> 1 -> 5
+
+2. The terminals represent nodes, and the connectors represent edges. The airport is the main Graph.
+We have to determine if the graph is bipartite.
+Algorithm:
+1. Run BFS on an arbitrary node s. Label this node X.
+2. For each layer of the BFS tree, label the nodes in that layer different from the previous level.
+(e.g. so for s's neighbors, they would be labeled Y, and the next layer would be X).
+3. If a neighbor of a node n was discovered already by BFS has the same label of the current node n 
+during BFS, stop and return null (meaning not possible). 
+4. If all nodes have not been discovered, pick an arbitrary node that has not been discovered,
+and repeat steps 1-3.
+5. Return the graph and its labels. (X can be international, Y can be domestic or vice versa)
+
+Runtime Analysis: The algorithm simply relies on BFS, which is O(t + c). The labeling 
+operations for step 2 and checking the current node's neighbor label are constant time O(1). Step 4
+takes O(t) time. Thus, the runtime is O(t + c).
+
+Proof of Correctness Outline: A graph is bipartite iff it has odd length cycles. BFS would find
+any odd length cycle as having designated different labels to every other node would determine 
+if there are any two nodes that share an edge that must have the same label.
