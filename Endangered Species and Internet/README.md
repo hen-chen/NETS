@@ -1,6 +1,3 @@
-README
-
-
 NOTE: INCLUDE the JSOUP.jar to run Main!
 
 
@@ -10,7 +7,7 @@ backend code is in Wiki.java
 
 Simply run Main and type the question and inputs into the console.
 
-Algorithms:
+## Algorithms:
 Q1: go to link with conservation status text. Iterate h3 tags and check for h3 tags with "IUCN".
 Iterate the IUCN h3 tag next elements and pick the ul tag and its lis tags. Add each li tag to
 the List of statuses.
@@ -49,7 +46,7 @@ tag that has "ethnic groups". Find parent of th tag and iterate through li tags.
 the li tag to the result list.
  
 
-Assumptions:
+## Assumptions:
 
 Q1: I assumed there was a link with name "conservation status" to a new wiki page. I assumed
 there was some header h3 that has IUCN for determining the status of a species. I assumed
@@ -106,7 +103,7 @@ could be found on the main given page.
 
 
 
-ANSWERS:
+## ANSWERS:
 
 Q1: 
 Extinct (EX) – No known living individuals
