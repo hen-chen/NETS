@@ -12,7 +12,3 @@ Part C: The answers keep changing because the starting node could be in a "dense
 nodes and hence why it would take less steps to find all nodes. If a node is picked that has
 a sparse area, it would take more steps to find all nodes.
 Part D: 3238 nodes (including source node)
-
-One problem I experienced was that I'm used to BFS working on only 1 connected component. But on
-piazza, it mentioned that BFS had to traverse the whole graph if the graph wasn't connected. So,
-I used recursion if all the nodes weren't discovered after the first BFS.
