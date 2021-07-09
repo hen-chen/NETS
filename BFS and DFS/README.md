@@ -1,4 +1,3 @@
-README 
 Two classes: Main and Parse
 The Parse class simply just parses the data.txt and converts it to a table of strings. 
 The main class - in the main method, it converts the table of strings into an Adjacency List.
@@ -17,7 +16,3 @@ Part D: 3238 nodes (including source node)
 One problem I experienced was that I'm used to BFS working on only 1 connected component. But on
 piazza, it mentioned that BFS had to traverse the whole graph if the graph wasn't connected. So,
 I used recursion if all the nodes weren't discovered after the first BFS.
-
-Assumptions:
-All nodes from 0 to 4038 were included in the given txt file (i.e. no nodes were skipped).
-@48 on Piazza
